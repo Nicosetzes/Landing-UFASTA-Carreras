@@ -20,6 +20,28 @@
   width: 100%;
 }
 
+/* Mixin for auto-playing slider */
+/* Adjusted value */
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1650px);
+            transform: translateX(-1650px); /* Adjusted value */
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1650px);
+            transform: translateX(-1650px); /* Adjusted value */
+  }
+}
 /* General styling */
 *,
 ::after,
@@ -162,7 +184,7 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 auto 1rem auto;
-  max-width: 375px;
+  max-width: 425px;
 }
 @media only screen and (min-width: 1200px) {
   .main .main__hero .hero__content-info {
@@ -188,9 +210,12 @@ select {
 .main .main__hero .hero__content-info > p {
   font-size: 1.5rem;
   line-height: 34px;
+  margin: 0 auto;
+  max-width: 325px;
 }
 @media only screen and (min-width: 1200px) {
   .main .main__hero .hero__content-info > p {
+    margin: 0 auto 0 0;
     text-align: left;
   }
 }
@@ -199,6 +224,9 @@ select {
   font-size: 3rem;
   line-height: 4rem;
   margin: 1rem 0;
+}
+.main .main__hero .hero__content-info h1 span {
+  font-family: "Montserrat", sans-serif;
 }
 @media only screen and (min-width: 1200px) {
   .main .main__hero .hero__content-info h1 {
@@ -217,6 +245,12 @@ select {
   font-size: 1.75rem;
   margin: 3rem auto 0 auto;
 }
+@media only screen and (min-width: 1200px) {
+  .main .main__hero .hero__content-info .button-primary {
+    margin: 3rem auto 0 0;
+    max-width: 275px;
+  }
+}
 .main .main__hero .hero__content-image {
   margin: 0 auto;
   max-width: 225px;
@@ -225,4 +259,80 @@ select {
   .main .main__hero .hero__content-image {
     margin: 0 auto 0 0;
   }
+}
+.main .main__M1 {
+  padding: 5rem 0.75rem;
+}
+.main .main__M1 .M1__content-header {
+  margin: 0 auto;
+  max-width: 650px;
+  width: 100%;
+}
+.main .main__M1 .M1__content-header h2 {
+  color: #0d3184;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+}
+.main .main__M1 .M1__content-main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5rem 0 0 0;
+}
+.main .main__M1 .M1__content-main .slider {
+  background: none;
+  height: 175px; /* Adjusted value */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1600px; /* Must be <= to the width of each .slide * the amount of slides / 2 */
+}
+@media only screen and (min-width: 768px) {
+  .main .main__M1 .M1__content-main .slider::before, .main .main__M1 .M1__content-main .slider::after {
+    background: -webkit-gradient(linear, left top, right top, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 175px; /* Adjusted value */
+    position: absolute;
+    width: 175px; /* Adjusted value */
+    z-index: 2;
+  }
+}
+.main .main__M1 .M1__content-main .slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.main .main__M1 .M1__content-main .slider::before {
+  left: 0;
+  top: 0;
+}
+.main .main__M1 .M1__content-main .slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3300px; /* Adjusted value, here I calculate the width of each .slide times the total amount of slides */
+}
+.main .main__M1 .M1__content-main .slider .slide {
+  height: 175px; /* Adjusted value */
+  width: 275px; /* Adjusted value, the width of each slide can be > to the width of each image */
+}
+.main .main__M1 .M1__content-main .slider .slide img {
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 175px; /* Adjusted value */
+  margin: 0 auto;
+  width: 175px; /* Adjusted value */
 }/*# sourceMappingURL=styles.css.map */
