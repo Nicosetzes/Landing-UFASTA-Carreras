@@ -3,75 +3,78 @@
   .main__hero {
     background-color: #000;
     padding: 3rem 0.75rem;
-    @media only screen and (min-width: 1200px) {
-      align-items: center;
-      display: flex;
+    @media only screen and (min-width: 992px) {
+      padding: 3rem 2.5rem;
     }
-    .hero__content-info {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto 1rem auto;
-      max-width: 425px;
-      @media only screen and (min-width: 1200px) {
-        margin: 0 12.5rem 0 7.5rem;
-        max-width: 475px;
-      }
-      @media only screen and (min-width: 1500px) {
-        margin: 0 20rem 0 12.5rem;
-        max-width: 475px;
-      }
-      p,
-      h1 {
-        color: $lightPurple;
-        text-align: center;
-        span {
-          font-weight: 700;
-        }
-      }
-      & > p {
-        font-size: 1.5rem;
-        line-height: 34px;
-        margin: 0 auto;
-        max-width: 325px;
-        @media only screen and (min-width: 1200px) {
-          margin: 0 auto 0 0;
-          text-align: left;
-        }
-      }
-      h1 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 3rem;
-        line-height: 4rem;
-        margin: 1rem 0;
-        span {
-          font-family: "Montserrat", sans-serif;
-        }
-        @media only screen and (min-width: 1200px) {
-          text-align: left;
-        }
-      }
-      & > div {
-        border: $lightPurple 1.25px solid;
-        border-radius: 0.5rem;
-        font-size: 1.75rem;
-        font-weight: 500;
-        line-height: 34px;
-        padding: 1.25rem 0.5rem;
-      }
-      .button-primary {
-        font-size: 1.75rem;
-        margin: 3rem auto 0 auto;
-        @media only screen and (min-width: 1200px) {
-          margin: 3rem auto 0 0;
-          max-width: 275px;
-        }
-      }
-    }
-    .hero__content-image {
+    .hero__wrapper {
       margin: 0 auto;
-      max-width: 225px;
-      @media only screen and (min-width: 1200px) {
-        margin: 0 auto 0 0;
+      max-width: 1200px;
+      @media only screen and (min-width: 992px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .hero__content-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 1rem auto;
+        max-width: 425px;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+        p,
+        h1 {
+          color: $lightPurple;
+          text-align: center;
+          span {
+            font-weight: 700;
+          }
+        }
+        & > p {
+          font-size: 1.5rem;
+          line-height: 34px;
+          margin: 0 auto;
+          max-width: 325px;
+          @media only screen and (min-width: 1200px) {
+            margin: 0 auto 0 0;
+            text-align: left;
+          }
+        }
+        h1 {
+          font-family: "Montserrat", sans-serif;
+          font-size: 3rem;
+          line-height: 4rem;
+          margin: 1rem 0;
+          span {
+            font-family: "Montserrat", sans-serif;
+          }
+          @media only screen and (min-width: 1200px) {
+            text-align: left;
+          }
+        }
+        & > div {
+          border: $lightPurple 1.25px solid;
+          border-radius: 0.5rem;
+          font-size: 1.75rem;
+          font-weight: 500;
+          line-height: 34px;
+          padding: 1.25rem 0.5rem;
+        }
+        .button-primary {
+          font-size: 1.75rem;
+          margin: 3rem auto 0 auto;
+          @media only screen and (min-width: 1200px) {
+            margin: 3rem auto 0 0;
+            max-width: 275px;
+          }
+        }
+      }
+      .hero__content-image {
+        margin: 0 auto;
+        max-width: 225px;
+        @media only screen and (min-width: 992px) {
+          margin: 0 auto;
+        }
       }
     }
   }
@@ -132,6 +135,9 @@
           width: calc(
             275px * 12
           ); /* Adjusted value, here I calculate the width of each .slide times the total amount of slides */
+          &:hover {
+            animation-play-state: paused; /* Pause when mouse over the animation */
+          }
         }
 
         .slide {
@@ -142,6 +148,449 @@
             height: 175px; /* Adjusted value */
             margin: 0 auto;
             width: 175px; /* Adjusted value */
+          }
+        }
+      }
+    }
+  }
+  .main__M2 {
+    padding: 0 0.75rem;
+    @media only screen and (min-width: 992px) {
+      padding: 0 2.5rem;
+    }
+    .M2__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      @media only screen and (min-width: 992px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+      }
+      .M2__content-text {
+        margin: 0 auto;
+        max-width: 450px;
+        @media only screen and (min-width: 992px) {
+          margin: 0 1.5rem 0 0;
+        }
+        p {
+          font-family: "Montserrat", sans-serif;
+          &:first-of-type {
+            color: $mediumPurple;
+            font-size: 2.5rem;
+            font-weight: 700;
+          }
+          &:last-of-type {
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+        h2 {
+          color: $mediumBlue;
+          font-family: "Montserrat", sans-serif;
+          font-size: 2rem;
+          font-weight: 700;
+          margin: 1.5rem 0;
+          span {
+            color: $mediumPurple;
+          }
+        }
+      }
+      .M2__content-image {
+        margin: 2rem auto 0 auto;
+        max-width: 500px;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+        img {
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+  .main__M3 {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 5rem 0.75rem;
+    .M3__content-header {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      h2 {
+        color: $mediumBlue;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      p {
+        color: $darkBlue;
+        margin: 0 0 1.5rem 0;
+      }
+      .M3__header-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media only screen and (min-width: 992px) {
+          flex-direction: row;
+        }
+        div {
+          align-items: center;
+          box-shadow: 0px 4px 4px 0px rgba(181, 181, 181, 0.25);
+          display: flex;
+          margin: 1rem auto;
+          padding: 0.5rem 1.5rem;
+          @media only screen and (min-width: 992px) {
+            margin: 0 1rem;
+          }
+          &:last-of-type {
+            margin: 1rem auto 0 auto;
+            @media only screen and (min-width: 992px) {
+              margin: 0 1rem;
+            }
+          }
+          img {
+            margin: 0 0.5rem 0 0;
+            max-width: 25px;
+          }
+          span {
+            color: $darkPurple;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .M3__content-cards {
+      margin: 3rem auto;
+      max-width: 1000px;
+      @media only screen and (min-width: 992px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .M3__cards-card {
+        margin: 1rem auto;
+        max-width: 300px;
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          margin: 1rem 0;
+        }
+        button {
+          align-items: center;
+          border: 0;
+          display: flex;
+          width: 100%;
+          &:not(.collapsed) {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            .M3__card-expand {
+              background-image: url("./../media/minus-circle.svg");
+            }
+          }
+          img {
+            margin: 0 1rem 0 0;
+            max-width: 40px;
+          }
+          .M3__card-expand {
+            background-image: url("./../media/plus-circle.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 30px;
+            margin: 0 0 0 auto;
+            width: 30px;
+          }
+        }
+        &:nth-child(1) {
+          button {
+            background-color: #38b6ab;
+          }
+        }
+        &:nth-child(2) {
+          button {
+            background-color: $mediumBlue;
+          }
+        }
+        &:nth-child(3) {
+          button {
+            background-color: #2f641c;
+          }
+        }
+        &:nth-child(4) {
+          button {
+            background-color: #0287c7;
+          }
+        }
+        &:nth-child(5) {
+          button {
+            background-color: #cc6734;
+          }
+        }
+        &:nth-child(6) {
+          button {
+            background-color: #e2333a;
+          }
+        }
+      }
+      .card-body {
+        background-color: #eee;
+        border: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        ul {
+          list-style: none;
+          li {
+            color: $darkBlue;
+            &::before {
+              content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+              color: $darkBlue; /* Change the color */
+              font-weight: bold; /* If you want it to be bold */
+              display: inline-block; /* Needed to add space between the bullet and the text */
+              width: 1em; /* Also needed for space (tweak if needed) */
+              margin-left: -1em; /* Also needed for space (tweak if needed) */
+            }
+          }
+        }
+      }
+    }
+    .M3__content-button {
+      .button-primary {
+        margin: 0 auto;
+        max-width: 275px;
+        text-decoration: underline;
+      }
+    }
+  }
+  .main__M4 {
+    background-color: $darkBlue;
+    padding: 5rem 0.75rem 0 0.75rem;
+    @media only screen and (min-width: 768px) {
+      padding: 0 0.75rem;
+    }
+    .M4__wrapper {
+      margin: 0 auto;
+      max-width: 1000px;
+      @media only screen and (min-width: 768px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .M4__content-info {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 1rem auto;
+        max-width: fit-content;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+        p {
+          font-family: "Montserrat", sans-serif;
+          &:nth-of-type(1) {
+            color: #53d484;
+            font-size: 2rem;
+            font-weight: 700;
+          }
+          &:nth-of-type(2) {
+            font-size: 2rem;
+            span {
+              font-weight: 700;
+            }
+          }
+          &:nth-of-type(3) {
+            font-size: 0.9rem;
+          }
+        }
+        & > div {
+          align-items: center;
+          display: flex;
+          .discount-value {
+            display: flex;
+            font-family: "Montserrat", sans-serif;
+            font-size: 6.5rem;
+            font-weight: 700;
+            line-height: 100%;
+          }
+          .discount-percentage {
+            display: flex;
+            flex-direction: column;
+            font-family: "Montserrat", sans-serif;
+            font-size: 3rem;
+            line-height: 100%;
+          }
+        }
+        .button-primary {
+          margin: 2rem 0 0 0;
+        }
+      }
+      .M4__content-image {
+        margin: 0 auto;
+        max-width: 250px;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+          max-width: 375px;
+        }
+      }
+    }
+  }
+  .main__M5 {
+    padding: 5rem 0;
+    #carousel_01 {
+      background-color: $darkBlue;
+      margin: 0 auto;
+      max-width: 992px;
+      .carousel-item {
+        padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+        .carousel-item__wrapper {
+          margin: 0 auto;
+          max-width: 450px;
+          @media only screen and (min-width: 992px) {
+            display: flex;
+            max-width: none;
+          }
+          .carousel-item__text {
+            display: flex;
+            flex-direction: column;
+            font-family: "Montserrat", sans-serif;
+            justify-content: center;
+            margin: 0 auto;
+            @media only screen and (min-width: 992px) {
+              margin: 0 2.5rem 0 0;
+              max-width: 475px;
+            }
+            h2 {
+              color: $lightPurple;
+              font-size: 1.75rem;
+              font-weight: 700;
+            }
+            p {
+              color: #fff;
+              &:first-of-type {
+                margin: 1rem 0;
+              }
+              &:last-of-type {
+                font-size: 0.9rem;
+                font-weight: 700;
+              }
+            }
+            & > div {
+              display: flex;
+              flex-wrap: wrap;
+              font-family: "Montserrat", sans-serif;
+              margin: 2rem 0 0 0;
+              a {
+                border: $lightPurple 1px solid;
+                border-radius: 0.25rem;
+                color: $lightPurple;
+                display: flex;
+                font-weight: 700;
+                justify-content: center;
+                margin: 0.5rem 0;
+                padding: 0.5em 1.25em;
+                text-decoration: none;
+                width: 100%;
+                @media only screen and (min-width: 992px) {
+                  margin: 0.5rem 0.5rem 0.25rem 0;
+                  max-width: 225px;
+                }
+              }
+            }
+
+            .button-primary {
+              border: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main__M6 {
+    background-color: $darkPurple;
+    height: 500px;
+    position: relative;
+    div {
+      align-items: center;
+      background-color: $mediumPurple;
+      border-radius: 0.5rem;
+      color: $lightPurple;
+      display: flex;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      left: 50%;
+      padding: 1em 1.5em;
+      position: absolute;
+      text-align: center;
+      top: -2rem;
+      transform: translateX(-50%);
+      width: fit-content;
+    }
+  }
+  .main__M7 {
+    font-family: "Montserrat", sans-serif;
+    padding: 5rem 0.75rem;
+    @media only screen and (min-width: 992px) {
+      padding: 5rem 2.5rem;
+    }
+    .M7__wrapper {
+      margin: 0 auto;
+      max-width: 1000px;
+      .M7__content-header {
+        margin: 0 auto;
+        max-width: 375px;
+        @media only screen and (min-width: 992px) {
+          display: flex;
+          justify-content: space-between;
+          max-width: none;
+          padding: 0;
+        }
+        h2 {
+          color: $mediumBlue;
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 133%;
+          @media only screen and (min-width: 992px) {
+            margin: 0 5rem 0 0;
+            max-width: 300px;
+          }
+        }
+        p {
+          color: $mediumBlue;
+          font-size: 1.25rem;
+          line-height: 125%;
+          margin: 1rem 0;
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+      .M7__content-cards {
+        margin: 0 auto;
+        max-width: 375px;
+        padding: 2.5rem 0;
+        @media only screen and (min-width: 1200px) {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: 1rem auto 0 auto;
+          max-width: none;
+          padding: 0;
+        }
+        .M7__cards-card {
+          border-radius: 0.5rem;
+          box-shadow: 0px 4px 15px 0px rgba(153, 153, 153, 0.25);
+          margin: 2rem 0;
+          padding: 2rem;
+          &:last-of-type {
+            margin: 0;
+          }
+          @media only screen and (min-width: 1200px) {
+            height: 350px;
+            max-width: 400px;
+          }
+          h3 {
+            color: #616160;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin: 1rem 0;
           }
         }
       }
