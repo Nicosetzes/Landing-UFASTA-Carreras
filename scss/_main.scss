@@ -87,10 +87,13 @@
       h2 {
         color: $mediumBlue;
         font-family: "Montserrat", sans-serif;
-        font-size: 2rem;
+        font-size: 1.75rem;
         font-weight: 700;
         line-height: 3rem;
         text-align: center;
+        @media only screen and (min-width: 400px) {
+          font-size: 2rem;
+        }
       }
     }
     .M1__content-main {
@@ -503,9 +506,9 @@
   }
   .main__M6 {
     background-color: $darkPurple;
-    height: 500px;
+    padding: 5rem 0.75rem;
     position: relative;
-    div {
+    .M6__content-header {
       align-items: center;
       background-color: $mediumPurple;
       border-radius: 0.5rem;
@@ -521,6 +524,20 @@
       top: -2rem;
       transform: translateX(-50%);
       width: fit-content;
+    }
+    #carousel_02 {
+      margin: 0 auto;
+      max-width: 992px;
+      .carousel-indicators {
+        /* This is position absolute, as defined by bootstrap */
+        bottom: -3rem;
+      }
+      iframe {
+        width: 100%;
+        @media only screen and (min-width: 768px) {
+          height: 500px;
+        }
+      }
     }
   }
   .main__M7 {
@@ -591,6 +608,144 @@
             font-size: 1.125rem;
             font-weight: 700;
             margin: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+  .main__M8 {
+    background-color: $mediumBlue;
+    padding: 5rem 0.75rem;
+    .M8__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      @media only screen and (min-width: 992px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .M8__content-text {
+        color: #fff;
+        margin: 0 auto;
+        max-width: 435px;
+        @media only screen and (min-width: 992px) {
+          margin: 0 1.5rem 0 0;
+        }
+        & > p {
+          &:nth-of-type(1) {
+            color: $lightPurple;
+            font-size: 6rem;
+            font-weight: 700;
+          }
+          &:nth-of-type(2) {
+            font-weight: 700;
+          }
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            font-size: 1.25rem;
+          }
+        }
+        .M8__text-full,
+        .M8__text-simple {
+          display: flex;
+          font-size: 0.875rem;
+          font-weight: 600;
+          margin: 1rem 0;
+          @media only screen and (min-width: 400px) {
+            font-size: 1rem;
+          }
+          img {
+            margin: 0 0.75rem 0 0;
+          }
+        }
+      }
+      .M8__content-form {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 2.5rem 0.75rem;
+        @media only screen and (min-width: 992px) {
+          flex-basis: 600px;
+          margin: 0;
+          max-width: none;
+          padding: 2.5rem 1.25rem;
+        }
+        & > p {
+          color: $mediumBlue;
+          font-size: 1.25rem;
+          font-weight: 700;
+          margin: 0 0 3rem 0;
+          max-width: 375px;
+          text-align: center;
+        }
+        .M8__form-row {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          @media only screen and (min-width: 1200px) {
+            align-items: center;
+            flex-direction: row;
+          }
+          input,
+          select,
+          textarea {
+            border: 1.5px solid #cac7c7;
+            margin: 0.5rem 0;
+            @media only screen and (min-width: 1200px) {
+              margin: 0.125rem;
+              width: 100%;
+            }
+          }
+          input,
+          textarea {
+            padding: 0.5em 1.25em;
+          }
+          select {
+            padding: 0.5em 1em;
+          }
+          label {
+            align-items: center;
+            color: #817e7e;
+            display: flex;
+            margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+            input {
+              margin: 0 1rem 0 0;
+              width: 1rem;
+            }
+          }
+
+          select,
+          p {
+            color: #817e7e;
+          }
+          .M8__row-block {
+            display: flex;
+            input {
+              width: 100%;
+            }
+          }
+          input[type="email"] {
+            @media only screen and (min-width: 1200px) {
+              max-width: 275px;
+            }
+          }
+          input[type="submit"] {
+            background-color: $mediumBlue;
+            color: $lightPurple;
+            font-weight: 700;
+            margin: 1.5rem 0 0 0;
+            width: 100%;
+            @media only screen and (min-width: 1200px) {
+              margin: 0 0 0 auto;
+              max-width: 275px;
+            }
+            &:hover {
+              background-color: $darkBlue;
+            }
           }
         }
       }
