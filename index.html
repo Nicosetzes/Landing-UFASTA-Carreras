@@ -19,7 +19,7 @@
     ></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
-  <body>
+  <body id="index">
     <header class="header">
       <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container-fluid">
@@ -43,21 +43,26 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="#">Home</a>
-              <a class="nav-link" href="#">Carreras</a>
-              <a class="nav-link" href="#">Emprender</a>
+              <a class="nav-link active" href="#">Home</a>
+              <a
+                class="nav-link"
+                href="https://www.ufasta.edu.ar/ingreso/carreras/"
+                target="_blank"
+                >Carreras</a
+              >
+              <a class="nav-link" href="emprender.html">Emprender</a>
               <a class="nav-link" href="#">Espacios</a>
               <a class="nav-link" href="#">Intercambios</a>
               <a class="nav-link" href="#">Prácticas</a>
               <a class="nav-link" href="#">Deportes</a>
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#index-form">Contacto</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <div class="main">
-      <section class="main__hero">
+    <div class="index">
+      <section class="index__hero">
         <div class="hero__wrapper">
           <div class="hero__content-info">
             <p>Viví la experiencia de estudiar en Mar del Plata</p>
@@ -68,14 +73,14 @@
             <div>
               <p>+ de 25 carreras <span>presenciales</span></p>
             </div>
-            <a href="#" class="button-primary">Solicitar INFO</a>
+            <a href="#index-form" class="button-primary">Solicitar INFO</a>
           </div>
           <div class="hero__content-image">
             <img src="media/hero-image.png" alt="" />
           </div>
         </div>
       </section>
-      <section class="main__M1">
+      <section class="index__M1">
         <div class="M1__content-header">
           <h2>
             Combiná tu carrera universitaria con el desarrollo de
@@ -125,7 +130,7 @@
           </div>
         </div>
       </section>
-      <section class="main__M2">
+      <section class="index__M2">
         <div class="M2__wrapper">
           <div class="M2__content-text">
             <p>#UFASTA</p>
@@ -142,7 +147,7 @@
           </div>
         </div>
       </section>
-      <section class="main__M3">
+      <section class="index__M3">
         <div class="M3__content-header">
           <h2>Conocé nuestras carreras universitarias</h2>
           <p>¿Con cuál carrera soñás para activar tu futuro?</p>
@@ -168,7 +173,7 @@
               aria-expanded="false"
               aria-controls="collapse__01"
             >
-              <img src="./media/medicine-logo.svg" alt="" />
+              <img src="./media/logo-medicine.svg" alt="" />
               <span>Médicas</span>
               <div class="M3__card-expand"></div>
             </button>
@@ -196,7 +201,7 @@
               aria-expanded="false"
               aria-controls="collapse__02"
             >
-              <img src="./media/economics-logo.svg" alt="" />
+              <img src="./media/logo-economics.svg" alt="" />
               <span>Económicas</span>
               <div class="M3__card-expand"></div>
             </button>
@@ -220,7 +225,7 @@
               aria-expanded="false"
               aria-controls="collapse__03"
             >
-              <img src="./media/law-logo.svg" alt="" />
+              <img src="./media/logo-law.svg" alt="" />
               <span>Jurídicas y Sociales</span>
               <div class="M3__card-expand"></div>
             </button>
@@ -243,7 +248,7 @@
               aria-expanded="false"
               aria-controls="collapse__04"
             >
-              <img src="./media/engineering-logo.svg" alt="" />
+              <img src="./media/logo-engineering.svg" alt="" />
               <span>Ingeniería</span>
               <div class="M3__card-expand"></div>
             </button>
@@ -265,7 +270,7 @@
               aria-expanded="false"
               aria-controls="collapse__05"
             >
-              <img src="./media/communications-logo.svg" alt="" />
+              <img src="./media/logo-communications.svg" alt="" />
               <span>Comunicación</span>
               <div class="M3__card-expand"></div>
             </button>
@@ -287,7 +292,7 @@
               aria-expanded="false"
               aria-controls="collapse__06"
             >
-              <img src="./media/education-logo.svg" alt="" />
+              <img src="./media/logo-education.svg" alt="" />
               <span>Educación</span>
               <div class="M3__card-expand"></div>
             </button>
@@ -308,10 +313,15 @@
           </div>
         </div>
         <div class="M3__content-button">
-          <a href="#" class="button-primary">Conocer carreras</a>
+          <a
+            href="https://www.ufasta.edu.ar/ingreso/carreras/"
+            target="_blank"
+            class="button-primary"
+            >Conocer carreras</a
+          >
         </div>
       </section>
-      <section class="main__M4">
+      <section class="index__M4">
         <div class="M4__wrapper">
           <div class="M4__content-info">
             <p>Beneficio</p>
@@ -331,7 +341,7 @@
           </div>
         </div>
       </section>
-      <section class="main__M5">
+      <section class="index__M5">
         <div id="carousel_01" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button
@@ -380,9 +390,19 @@
                     Colaboratorio, incubadora de empresas y destino emprendedor
                   </p>
                   <div>
-                    <a href="">Ver video Incubadora</a>
-                    <a href="">Ver video BorrArt</a>
-                    <a href="" class="button-primary">Ir a emprender!</a>
+                    <a
+                      href="https://www.youtube.com/watch?v=xgODNx_kPME&t=1s"
+                      target="_blank"
+                      >Ver video Incubadora</a
+                    >
+                    <a
+                      href="https://www.youtube.com/watch?v=ErNkfobp8s8"
+                      target="_blank"
+                      >Ver video BorrArt</a
+                    >
+                    <a href="./emprender.html" class="button-primary"
+                      >Ir a emprender!</a
+                    >
                   </div>
                 </div>
                 <div class="carousel-item__image">
@@ -476,7 +496,7 @@
           </div>
         </div>
       </section>
-      <section class="main__M6">
+      <section class="index__M6">
         <div class="M6__content-header">Experiencias que motivan</div>
         <div id="carousel_02" class="carousel slide">
           <div class="carousel-indicators">
@@ -639,7 +659,7 @@
           </div>
         </div>
       </section>
-      <section class="main__M7">
+      <section class="index__M7">
         <div class="M7__wrapper">
           <div class="M7__content-header">
             <h2>Quiero vivir la experiencia UFASTA</h2>
@@ -661,7 +681,7 @@
               </p>
             </div>
             <div class="M7__cards-card">
-              <img src="./media/star-purple.svg" alt="" />
+              <img src="./media/star-purple-01.svg" alt="" />
               <h3>Colaboratorio emprendedor</h3>
               <p>
                 Espacio de innovación y emprendimiento. Te ofrecemos incubar tus
@@ -691,73 +711,73 @@
           </div>
         </div>
       </section>
-      <section class="main__M8">
-        <div class="M8__wrapper">
-          <div class="M8__content-text">
+      <section id="index-form" class="website__form">
+        <div class="form__wrapper">
+          <div class="form__content-text">
             <p>+ INFO</p>
             <p>¡Queremos conocerte!</p>
             <p>
               Completá el formulario y recibí información sobre el ingreso por
               mail o WhatsApp.
             </p>
-            <div class="M8__text-full">
-              <img src="./media/email-logo.svg" alt="" />
+            <div class="form__text-full">
+              <img src="./media/logo-email.svg" alt="" />
               <p>informes@ufasta.edu.ar</p>
             </div>
-            <div class="M8__text-full">
-              <img src="./media/email-logo.svg" alt="" />
+            <div class="form__text-full">
+              <img src="./media/logo-email.svg" alt="" />
               <p>informes.distancia@ufasta.edu.ar</p>
             </div>
-            <div class="M8__text-simple">
+            <div class="form__text-simple">
               <p>0800-999-6556 <span>(Desde Mar del Plata)</span></p>
             </div>
-            <div class="M8__text-simple">
+            <div class="form__text-simple">
               <p>0810-999-3478 <span>(Desde todo el país)</span></p>
             </div>
-            <div class="M8__text-full">
-              <img src="./media/location-logo.svg" alt="" />
+            <div class="form__text-full">
+              <img src="./media/logo-location.svg" alt="" />
               <p>Gascón 3145. Sede San Vicente de Paul</p>
             </div>
-            <div class="M8__text-full">
-              <img src="./media/location-logo.svg" alt="" />
+            <div class="form__text-full">
+              <img src="./media/logo-location.svg" alt="" />
               <p>Avellaneda 3341. Sede San Alberto Magno</p>
             </div>
           </div>
-          <form action="" class="M8__content-form">
+          <form action="" class="form__content-main">
             <p>Completá el formulario y recibí información sobre el ingreso</p>
-            <div class="M8__form-row">
+            <div class="form__main-row">
               <input type="text" placeholder="Nombre*" /><input
                 type="text"
                 placeholder="Apellido*"
               />
             </div>
-            <div class="M8__form-row">
+            <div class="form__main-row">
               <select name="" id="">
                 <option value="">Tipo*</option>
               </select>
               <input type="text" placeholder="Número Documento*" />
             </div>
-            <div class="M8__form-row">
+            <div class="form__main-row">
               <input type="email" placeholder="Email*" />
-              <div class="M8__row-block">
+              <div class="form__row-block">
                 <select name="" id="">
                   <option value="">País*</option>
                 </select>
                 <input type="text" placeholder="Móvil*" />
               </div>
             </div>
-            <div class="M8__form-row">
+            <div class="form__main-row">
               <select name="" id="">
                 <option value="">Carrera*</option>
               </select>
             </div>
-            <div class="M8__form-row">
+            <div class="form__main-row">
               <input
                 type="text"
                 placeholder="Seleccioná tu sede más cercana*"
               />
             </div>
-            <div class="M8__form-row">
+            <div class="form__main-row">
               <textarea
                 name=""
                 id=""
@@ -766,13 +786,13 @@
                 placeholder="Consulta"
               ></textarea>
             </div>
-            <div class="M8__form-row">
+            <div class="form__main-row">
               <label
                 ><input type="checkbox" name="" id="" />
                 Deseo ser contactado por Whatsapp
               </label>
             </div>
-            <div class="M8__form-row">
+            <div class="form__main-row">
               <p>*Requerido</p>
               <input type="submit" value="Enviar" />
             </div>
@@ -785,11 +805,15 @@
         <div class="footer__header">
           <p>SABER ES CRECER</p>
           <p>UNIVERSIDAD FASTA</p>
-          <div></div>
+          <div>
+            <a href=""><img src="./media/logo-instagram.png" alt="" /></a>
+            <a href=""><img src="./media/logo-facebook.png" alt="" /></a>
+            <a href=""><img src="./media/logo-youtube.png" alt="" /></a>
+          </div>
         </div>
         <div class="column">
           <p>Secciones</p>
-          <a href="">Emprender</a>
+          <a href="emprender.html">Emprender</a>
           <a href="">Espacios</a>
           <a href="">Intercambios internacionales</a>
           <a href="">Prácticas</a>

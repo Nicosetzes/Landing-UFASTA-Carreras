@@ -1,0 +1,231 @@
+.emprender {
+  padding-top: 108px;
+  .emprender__hero {
+    background-color: $darkBlue;
+    color: $lightPurple;
+    padding: 5rem 0.75rem 0 0.75rem;
+    .hero__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      @media only screen and (min-width: 992px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .hero__content-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 1rem auto;
+        max-width: 425px;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+        h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 100%;
+        }
+        p {
+          font-size: 1.5rem;
+          margin: 2.75rem 0 1.5rem 0;
+          &:last-of-type {
+            color: $orange;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 140%;
+            margin: 0;
+          }
+        }
+      }
+      .hero__content-image {
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+          max-width: 600px;
+        }
+      }
+    }
+  }
+  .emprender__M1 {
+    margin: 0 0 50rem 0;
+    padding: 5rem 0;
+    @media only screen and (min-width: 768px) {
+      margin: 0 0 25rem 0;
+    }
+    @media only screen and (min-width: 1200px) {
+      margin: 0 0 5rem 0;
+    }
+    .M1__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 0.75rem;
+      .M1__content-header {
+        & > div {
+          border-bottom: $orange 2px solid;
+          margin: 0 0 4rem 0;
+          padding: 3rem 0;
+        }
+        h2,
+        h3 {
+          font-weight: 700;
+          text-align: center;
+          span {
+            color: $mediumPurple;
+          }
+        }
+        h2 {
+          font-size: 2rem;
+          line-height: 120%;
+          @media only screen and (min-width: 400px) {
+            font-size: 2.75rem;
+          }
+        }
+        h3 {
+          font-size: 2rem;
+          line-height: 145%;
+          @media only screen and (min-width: 400px) {
+            font-size: 2.5rem;
+          }
+        }
+      }
+      .M1__content-cards {
+        margin: 0 auto;
+        max-width: 375px;
+        padding: 2.5rem 0;
+        @media only screen and (min-width: 1200px) {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: 2rem auto;
+          max-width: none;
+          padding: 0;
+        }
+        .M1__cards-card {
+          border-radius: 0.5rem;
+          box-shadow: 0px 4px 15px 0px rgba(153, 153, 153, 0.25);
+          margin: 2rem 0;
+          padding: 2rem;
+          @media only screen and (min-width: 1200px) {
+            height: 325px;
+            max-width: 275px;
+          }
+          &:last-of-type {
+            margin: 0;
+          }
+          img {
+            margin: 0 0 1.25rem 0;
+          }
+          h4 {
+            color: #616160;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin: 0 0 1rem 0;
+          }
+          p {
+            color: #616160;
+          }
+        }
+      }
+      .M1__content-video {
+        display: flex;
+        margin: 0 auto;
+        iframe {
+          height: 250px;
+          margin: 0 auto;
+          max-width: 500px;
+          width: 100%;
+          @media only screen and (min-width: 576px) {
+            height: 400px;
+          }
+          @media only screen and (min-width: 768px) {
+            height: 500px;
+            max-width: 800px;
+          }
+          @media only screen and (min-width: 1200px) {
+            height: 600px;
+            max-width: 1000px;
+          }
+        }
+      }
+    }
+    .M1__content-carousel {
+      background-color: $darkPurple;
+      padding: 5rem 0.75rem 7rem 0.75rem;
+      h3 {
+        color: $lightPurple;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0 0 3rem 0;
+        text-align: center;
+      }
+      #carousel_03 {
+        margin: 0 auto;
+        max-width: 992px;
+        .carousel-indicators {
+          /* This is position absolute, as defined by bootstrap */
+          bottom: -3rem;
+        }
+        iframe {
+          width: 100%;
+          @media only screen and (min-width: 768px) {
+            height: 500px;
+          }
+        }
+      }
+    }
+    .M1__content-footer {
+      background-color: $darkBlue;
+      margin: 5rem 0;
+      padding: 5rem 0.75rem 12.5rem 0.75rem;
+      position: relative;
+      h2 {
+        background-color: $darkPurple;
+        border-radius: 0.5rem;
+        color: $lightPurple;
+        font-size: 1.75rem;
+        font-weight: 700;
+        left: 50%;
+        max-width: 375px;
+        padding: 0.5rem 1.5rem;
+        position: absolute;
+        text-align: center;
+        top: -2rem;
+        transform: translateX(-50%);
+        width: 100%;
+      }
+      p {
+        color: #fff;
+        font-weight: 500;
+        margin: 0 auto 3rem auto;
+        max-width: 700px;
+        text-align: center;
+      }
+      div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        left: 50%;
+        justify-content: center;
+        max-width: 750px;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 100%;
+        @media only screen and (min-width: 768px) {
+          flex-direction: row;
+        }
+        @media only screen and (min-width: 1200px) {
+          max-width: none;
+        }
+        img {
+          margin: 1rem;
+          max-width: 325px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
