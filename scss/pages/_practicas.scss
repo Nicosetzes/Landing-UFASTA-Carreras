@@ -1,0 +1,149 @@
+.practicas {
+  padding-top: 108px;
+  .practicas__hero {
+    background-color: $darkBlue;
+    color: $lightPurple;
+    padding: 5rem 0.75rem 0 0.75rem;
+    .hero__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      @media only screen and (min-width: 992px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .hero__content-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 1rem auto;
+        max-width: 425px;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+        h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 100%;
+        }
+        p {
+          font-size: 1.5rem;
+          margin: 2.75rem 0 1.5rem 0;
+          &:last-of-type {
+            color: $orange;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 140%;
+            margin: 0;
+          }
+        }
+      }
+      .hero__content-image {
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .practicas__M1 {
+    padding: 5rem 0;
+    .M1__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 0.75rem;
+      .M1__content-header {
+        & > div {
+          border-bottom: $orange 2px solid;
+          margin: 0 0 4rem 0;
+          padding: 3rem 0;
+        }
+        h2,
+        h3 {
+          font-weight: 700;
+          text-align: center;
+          span {
+            color: $mediumPurple;
+          }
+        }
+        h2 {
+          font-size: 1.5rem;
+          line-height: 120%;
+          @media only screen and (min-width: 400px) {
+            font-size: 2.25rem;
+          }
+        }
+        h3 {
+          font-size: 1.5rem;
+          line-height: 145%;
+          @media only screen and (min-width: 400px) {
+            font-size: 2rem;
+          }
+        }
+      }
+      .M1__content-dialogs {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3rem 0 0 0;
+        & > div {
+          margin: 1rem;
+          max-width: 200px;
+        }
+      }
+      .M1__content-cards {
+        margin: 0 auto;
+        max-width: 375px;
+        padding: 2.5rem 0;
+        @media only screen and (min-width: 1200px) {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: 2rem auto;
+          max-width: none;
+          padding: 0;
+        }
+        .M1__cards-card {
+          border-radius: 0.5rem;
+          box-shadow: 0px 4px 15px 0px rgba(153, 153, 153, 0.25);
+          margin: 2rem 0;
+          padding: 2rem;
+          @media only screen and (min-width: 1200px) {
+            height: 375px;
+            max-width: 280px;
+            padding: 1.5rem;
+          }
+          &:last-of-type {
+            margin: 0;
+          }
+          img {
+            margin: 0 0 1.25rem 0;
+          }
+          h4 {
+            color: #616160;
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin: 0 0 1rem 0;
+          }
+          p {
+            color: #616160;
+          }
+        }
+      }
+    }
+  }
+  .practicas__M2 {
+    background-color: $darkPurple;
+    display: flex;
+    padding: 5rem 0.75rem;
+    iframe {
+      height: 575px;
+      margin: 0 auto;
+      max-width: 325px;
+      width: 100%;
+    }
+  }
+}
