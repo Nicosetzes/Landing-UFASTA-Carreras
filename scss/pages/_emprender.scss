@@ -77,16 +77,10 @@
         h2 {
           font-size: 2rem;
           line-height: 120%;
-          @media only screen and (min-width: 400px) {
-            font-size: 2.75rem;
-          }
         }
         h3 {
-          font-size: 2rem;
+          font-size: 1.75rem;
           line-height: 145%;
-          @media only screen and (min-width: 400px) {
-            font-size: 2.5rem;
-          }
         }
       }
       .M1__content-cards {

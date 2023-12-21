@@ -1,0 +1,106 @@
+.intercambios {
+  padding-top: 108px;
+  .intercambios__hero {
+    background-color: $darkBlue;
+    color: $lightPurple;
+    padding: 5rem 0.75rem 0 0.75rem;
+    .hero__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      @media only screen and (min-width: 992px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .hero__content-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 1rem auto;
+        max-width: 425px;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+        h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 100%;
+        }
+        p {
+          font-size: 1.5rem;
+          margin: 2.75rem 0 1.5rem 0;
+          &:last-of-type {
+            color: $orange;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 140%;
+            margin: 0;
+          }
+        }
+      }
+      .hero__content-image {
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .intercambios__M1 {
+    padding: 5rem 0.75rem;
+    .M1__content-header {
+      border-radius: 0.5rem;
+      display: flex;
+      justify-content: center;
+      & > div {
+        box-shadow: 0px 4px 17px 0px rgba(167, 165, 165, 0.25);
+        margin: 1rem;
+        max-width: 400px;
+        padding: 1rem;
+        width: 100%;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    .M1__content-map {
+      .map__text {
+        border-bottom: $orange 2px solid;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 3rem auto 1rem auto;
+        max-width: 550px;
+        text-align: center;
+        span {
+          color: $mediumPurple;
+        }
+      }
+      .map__footer {
+        color: $darkBlue;
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin: 3rem 0 0 0;
+        text-align: center;
+      }
+    }
+  }
+  .intercambios__M2 {
+    background-color: $darkPurple;
+    padding: 5rem 0.75rem;
+    #carousel_04 {
+      margin: 0 auto;
+      max-width: 992px;
+      .carousel-indicators {
+        /* This is position absolute, as defined by bootstrap */
+        bottom: -3rem;
+      }
+      iframe {
+        width: 100%;
+        @media only screen and (min-width: 768px) {
+          height: 500px;
+        }
+      }
+    }
+  }
+}

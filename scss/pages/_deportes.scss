@@ -1,0 +1,100 @@
+.deportes {
+  padding-top: 108px;
+  .deportes__hero {
+    background-color: $darkBlue;
+    color: $lightPurple;
+    padding: 5rem 0.75rem 0 0.75rem;
+    .hero__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      @media only screen and (min-width: 992px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+      .hero__content-info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 1rem auto;
+        max-width: 450px;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+        h1 {
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 100%;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 400;
+          margin: 2.75rem 0 1.5rem 0;
+          line-height: 140%;
+        }
+      }
+      .hero__content-image {
+        margin: 0 auto;
+        max-width: 500px;
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .deportes__M1 {
+    .M1__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 0.75rem;
+      .M1__content-header {
+        & > div {
+          border-bottom: $orange 2px solid;
+          margin: 0 0 4rem 0;
+          padding: 3rem 0;
+        }
+        h2 {
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 120%;
+          text-align: center;
+          span {
+            color: $mediumPurple;
+          }
+        }
+      }
+      .M1__content-dialogs {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1200px;
+        & > div {
+          margin: 1rem;
+          max-width: 175px;
+        }
+      }
+      .M1__content-carousel {
+        padding: 5rem 0.75rem;
+        #carousel_05 {
+          margin: 0 auto;
+          max-width: 768px;
+          .carousel-indicators {
+            /* This is position absolute, as defined by bootstrap */
+            bottom: -3rem;
+            button {
+              background-color: #100e0e;
+            }
+          }
+          img {
+            width: 100%;
+            // @media only screen and (min-width: 768px) {
+            //   height: 500px;
+            // }
+          }
+        }
+      }
+    }
+  }
+}
