@@ -89,9 +89,66 @@
           }
           img {
             width: 100%;
-            // @media only screen and (min-width: 768px) {
-            //   height: 500px;
-            // }
+          }
+        }
+      }
+    }
+  }
+  .deportes__M2 {
+    padding: 5rem 0.75rem 10rem 0.75rem;
+    .M2__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      .M2__content-header {
+        margin: 0 0 3rem 0;
+        @media only screen and (min-width: 992px) {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+        }
+        .M2__header-text {
+          margin: 0 auto 3rem auto;
+          max-width: 400px;
+          @media only screen and (min-width: 992px) {
+            margin: 0 0 3rem 0;
+          }
+          h2 {
+            color: $mediumPurple;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 1.5rem 0;
+          }
+          p {
+            color: #616160;
+            line-height: 165%;
+          }
+        }
+        .M2__header-dialogs {
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 0 auto;
+          max-width: 500px;
+          & > div {
+            margin: 1rem;
+            max-width: 175px;
+          }
+        }
+      }
+      .M2__content-carousel {
+        #carousel_06 {
+          margin: 0 auto;
+          max-width: 768px;
+          .carousel-indicators {
+            /* This is position absolute, as defined by bootstrap */
+            bottom: -3rem;
+            button {
+              background-color: #100e0e;
+            }
+          }
+          img {
+            width: 100%;
           }
         }
       }

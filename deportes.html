@@ -99,7 +99,11 @@
             <div><img src="./media/autoplay-27.png" alt="" /></div>
           </div>
           <div class="M1__content-carousel">
-            <div id="carousel_05" class="carousel slide">
+            <div
+              id="carousel_05"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
               <div class="carousel-indicators">
                 <button
                   type="button"
@@ -127,24 +131,6 @@
                   data-bs-slide-to="3"
                   aria-label="Slide 4"
                 ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel_05"
-                  data-bs-slide-to="4"
-                  aria-label="Slide 5"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel_05"
-                  data-bs-slide-to="5"
-                  aria-label="Slide 6"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carousel_05"
-                  data-bs-slide-to="6"
-                  aria-label="Slide 7"
-                ></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -167,7 +153,65 @@
                     <img src="./media/deportes-04.png" alt="" />
                   </div>
                 </div>
-                <div class="carousel-item">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="deportes__M2">
+        <div class="M2__wrapper">
+          <div class="M2__content-header">
+            <div class="M2__header-text">
+              <h2>Talleres</h2>
+              <p>
+                Poné en juego tu creatividad con diferentes lenguajes
+                expresivos. Te proponemos diferentes espacios de expresión,
+                comunicación y desarrollo de capacidades artísticas.
+              </p>
+            </div>
+            <div class="M2__header-dialogs">
+              <div><img src="./media/autoplay-28.png" alt="" /></div>
+              <div><img src="./media/autoplay-29.png" alt="" /></div>
+              <div><img src="./media/autoplay-30.png" alt="" /></div>
+              <div><img src="./media/autoplay-31.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="M2__content-carousel">
+            <div
+              id="carousel_06"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel_06"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel_06"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel_06"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carousel_06"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
                   <div class="carousel-item__wrapper">
                     <img src="./media/deportes-05.png" alt="" />
                   </div>
@@ -182,11 +226,135 @@
                     <img src="./media/deportes-07.png" alt="" />
                   </div>
                 </div>
+                <div class="carousel-item">
+                  <div class="carousel-item__wrapper">
+                    <img src="./media/deportes-08.png" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <section id="deportes-form" class="website__form">
+        <div class="form__wrapper">
+          <div class="form__content-text">
+            <p>+ INFO</p>
+            <p>¡Queremos conocerte!</p>
+            <p>
+              Completá el formulario y recibí información sobre el ingreso por
+              mail o WhatsApp.
+            </p>
+            <div class="form__text-full">
+              <img src="./media/logo-email.svg" alt="" />
+              <p>informes@ufasta.edu.ar</p>
+            </div>
+            <div class="form__text-full">
+              <img src="./media/logo-email.svg" alt="" />
+              <p>informes.distancia@ufasta.edu.ar</p>
+            </div>
+            <div class="form__text-simple">
+              <p>0800-999-6556 <span>(Desde Mar del Plata)</span></p>
+            </div>
+            <div class="form__text-simple">
+              <p>0810-999-3478 <span>(Desde todo el país)</span></p>
+            </div>
+            <div class="form__text-full">
+              <img src="./media/logo-location.svg" alt="" />
+              <p>Gascón 3145. Sede San Vicente de Paul</p>
+            </div>
+            <div class="form__text-full">
+              <img src="./media/logo-location.svg" alt="" />
+              <p>Avellaneda 3341. Sede San Alberto Magno</p>
+            </div>
+          </div>
+          <form action="" class="form__content-main">
+            <p>Completá el formulario y recibí información sobre el ingreso</p>
+            <div class="form__main-row">
+              <input type="text" placeholder="Nombre*" /><input
+                type="text"
+                placeholder="Apellido*"
+              />
+            </div>
+            <div class="form__main-row">
+              <select name="" id="">
+                <option value="">Tipo*</option>
+              </select>
+              <input type="text" placeholder="Número Documento*" />
+            </div>
+            <div class="form__main-row">
+              <input type="email" placeholder="Email*" />
+              <div class="form__row-block">
+                <select name="" id="">
+                  <option value="">País*</option>
+                </select>
+                <input type="text" placeholder="Móvil*" />
+              </div>
+            </div>
+            <div class="form__main-row">
+              <select name="" id="">
+                <option value="">Carrera*</option>
+              </select>
+            </div>
+            <div class="form__main-row">
+              <input
+                type="text"
+                placeholder="Seleccioná tu sede más cercana*"
+              />
+            </div>
+            <div class="form__main-row">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Consulta"
+              ></textarea>
+            </div>
+            <div class="form__main-row">
+              <label
+                ><input type="checkbox" name="" id="" />
+                Deseo ser contactado por Whatsapp
+              </label>
+            </div>
+            <div class="form__main-row">
+              <p>*Requerido</p>
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__header">
+          <p>SABER ES CRECER</p>
+          <p>UNIVERSIDAD FASTA</p>
+          <div>
+            <a href=""><img src="./media/logo-instagram.png" alt="" /></a>
+            <a href=""><img src="./media/logo-facebook.png" alt="" /></a>
+            <a href=""><img src="./media/logo-youtube.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="column">
+          <p>Secciones</p>
+          <a href="index.html">Inicio</a>
+          <a href="emprender.html">Emprender</a>
+          <a href="espacios.html">Espacios</a>
+          <a href="intercambios.html">Intercambios internacionales</a>
+          <a href="practicas.html">Prácticas</a>
+          <a href="#">Deportes</a>
+        </div>
+        <div class="column">
+          <p>Carreras</p>
+          <a href="">Médicas</a>
+          <a href="">Económicas</a>
+          <a href="">Jurídicas y Sociales</a>
+          <a href="">Ingeniería</a>
+          <a href="">Comunicación</a>
+          <a href="">Educación</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
