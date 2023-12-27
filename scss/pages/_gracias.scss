@@ -1,0 +1,50 @@
+.gracias {
+  padding-top: 108px;
+  .gracias__M1 {
+    padding: 5rem 0;
+    .M1__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 0.75rem;
+      @media only screen and (min-width: 992px) {
+        padding: 0;
+      }
+      .M1__content-image {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+      .M1__content-text {
+        margin: 3rem auto 5rem auto;
+        max-width: 525px;
+        h1,
+        p {
+          color: $darkBlue;
+          text-align: center;
+        }
+        h1 {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        p {
+          line-height: 140%;
+        }
+      }
+      .M1__content-footer {
+        border-bottom: $orange 2px solid;
+        margin: 0 auto 5rem auto;
+        max-width: 600px;
+        padding: 0 0 2rem 0;
+        p {
+          color: $darkBlue;
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+      .button-primary {
+        margin: 0 auto;
+        max-width: fit-content;
+      }
+    }
+  }
+}

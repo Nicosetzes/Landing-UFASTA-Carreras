@@ -1,0 +1,45 @@
+.contacto {
+  padding-top: 108px;
+  .contacto__M1 {
+    padding: 5rem 0;
+    .M1__wrapper {
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 0 0.75rem;
+      @media only screen and (min-width: 992px) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+      }
+      .M1__content-text {
+        margin: 0 auto 3rem auto;
+        max-width: 525px;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+          max-width: 475px;
+        }
+        h1,
+        p {
+          color: $darkBlue;
+          text-align: center;
+        }
+        h1 {
+          font-size: 2rem;
+          font-weight: 700;
+          margin: 0 0 0.75rem 0;
+        }
+        p {
+          line-height: 140%;
+        }
+      }
+      .M1__content-image {
+        margin: 0 auto;
+        max-width: 600px;
+        @media only screen and (min-width: 992px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

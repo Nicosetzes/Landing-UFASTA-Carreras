@@ -77,6 +77,9 @@
           margin: 0 auto;
           max-width: 300px;
           padding: 0.75rem 0.5rem;
+          @media only screen and (min-width: 1200px) {
+            margin: 0;
+          }
         }
         .button-primary {
           font-size: 1.75rem;
@@ -572,7 +575,7 @@
     }
     .M7__wrapper {
       margin: 0 auto;
-      max-width: 1000px;
+      max-width: 1200px;
       .M7__content-header {
         margin: 0 auto;
         max-width: 375px;
@@ -624,8 +627,8 @@
             margin: 0;
           }
           @media only screen and (min-width: 1200px) {
-            height: 350px;
-            max-width: 400px;
+            height: 450px;
+            max-width: 275px;
           }
           h3 {
             color: #616160;
