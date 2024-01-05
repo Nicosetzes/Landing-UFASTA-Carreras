@@ -1502,7 +1502,7 @@ select {
   }
 }
 .espacios .espacios__M1 {
-  padding: 5rem 0.75rem;
+  padding: 5rem 0;
 }
 .espacios .espacios__M1 .M1__wrapper {
   -webkit-box-align: center;
@@ -1520,8 +1520,19 @@ select {
   max-width: 1000px;
 }
 .espacios .espacios__M1 .M1__wrapper > div {
-  margin: 1rem;
-  max-width: 175px;
+  margin: 0.5rem;
+  max-width: 130px;
+}
+@media only screen and (min-width: 400px) {
+  .espacios .espacios__M1 .M1__wrapper > div {
+    margin: 0.75rem;
+    max-width: 175px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .espacios .espacios__M1 .M1__wrapper > div {
+    margin: 1rem;
+  }
 }
 .espacios .espacios__M2 {
   background-color: #3c2a80;
@@ -2000,14 +2011,15 @@ select {
   width: 100%;
 }
 .deportes .deportes__M2 {
-  padding: 5rem 0.75rem 10rem 0.75rem;
+  padding: 5rem 0 10rem 0;
 }
 .deportes .deportes__M2 .M2__wrapper {
   margin: 0 auto;
   max-width: 1200px;
 }
 .deportes .deportes__M2 .M2__wrapper .M2__content-header {
-  margin: 0 0 3rem 0;
+  margin: 0 auto 3rem auto;
+  max-width: 992px;
 }
 @media only screen and (min-width: 992px) {
   .deportes .deportes__M2 .M2__wrapper .M2__content-header {
@@ -2025,6 +2037,7 @@ select {
 .deportes .deportes__M2 .M2__wrapper .M2__content-header .M2__header-text {
   margin: 0 auto 3rem auto;
   max-width: 400px;
+  padding: 0 0.75rem;
 }
 @media only screen and (min-width: 992px) {
   .deportes .deportes__M2 .M2__wrapper .M2__content-header .M2__header-text {
@@ -2056,9 +2069,28 @@ select {
   margin: 0 auto;
   max-width: 500px;
 }
+@media only screen and (min-width: 992px) {
+  .deportes .deportes__M2 .M2__wrapper .M2__content-header .M2__header-dialogs {
+    margin: 0;
+  }
+}
 .deportes .deportes__M2 .M2__wrapper .M2__content-header .M2__header-dialogs > div {
-  margin: 1rem;
-  max-width: 175px;
+  margin: 0.5rem;
+  max-width: 130px;
+}
+@media only screen and (min-width: 400px) {
+  .deportes .deportes__M2 .M2__wrapper .M2__content-header .M2__header-dialogs > div {
+    margin: 0.75rem;
+    max-width: 175px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .deportes .deportes__M2 .M2__wrapper .M2__content-header .M2__header-dialogs > div {
+    margin: 1rem;
+  }
+}
+.deportes .deportes__M2 .M2__wrapper .M2__content-carousel {
+  padding: 0 0.75rem;
 }
 .deportes .deportes__M2 .M2__wrapper .M2__content-carousel #carousel_06 {
   margin: 0 auto;

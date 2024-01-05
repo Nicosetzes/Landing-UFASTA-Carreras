@@ -105,12 +105,13 @@
     }
   }
   .deportes__M2 {
-    padding: 5rem 0.75rem 10rem 0.75rem;
+    padding: 5rem 0 10rem 0;
     .M2__wrapper {
       margin: 0 auto;
       max-width: 1200px;
       .M2__content-header {
-        margin: 0 0 3rem 0;
+        margin: 0 auto 3rem auto;
+        max-width: 992px;
         @media only screen and (min-width: 992px) {
           align-items: center;
           display: flex;
@@ -119,6 +120,7 @@
         .M2__header-text {
           margin: 0 auto 3rem auto;
           max-width: 400px;
+          padding: 0 0.75rem;
           @media only screen and (min-width: 992px) {
             margin: 0 0 3rem 0;
           }
@@ -140,13 +142,24 @@
           justify-content: center;
           margin: 0 auto;
           max-width: 500px;
+          @media only screen and (min-width: 992px) {
+            margin: 0;
+          }
           & > div {
-            margin: 1rem;
-            max-width: 175px;
+            margin: 0.5rem;
+            max-width: 130px;
+            @media only screen and (min-width: 400px) {
+              margin: 0.75rem;
+              max-width: 175px;
+            }
+            @media only screen and (min-width: 768px) {
+              margin: 1rem;
+            }
           }
         }
       }
       .M2__content-carousel {
+        padding: 0 0.75rem;
         #carousel_06 {
           margin: 0 auto;
           max-width: 768px;
