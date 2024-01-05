@@ -1,6 +1,6 @@
-.gracias {
+.error {
   padding-top: 108px;
-  .gracias__M1 {
+  .error__M1 {
     padding: 5rem 0.75rem;
     .M1__wrapper {
       margin: 0 auto;
@@ -8,10 +8,6 @@
       padding: 0 0.75rem;
       @media only screen and (min-width: 992px) {
         padding: 0;
-      }
-      .M1__content-image {
-        margin: 0 auto;
-        max-width: 600px;
       }
       .M1__content-text {
         margin: 3rem auto 5rem auto;
