@@ -28,13 +28,13 @@
         p {
           font-size: 1.5rem;
           margin: 2.75rem 0 1.5rem 0;
-          &:last-of-type {
-            color: $orange;
-            font-size: 1.25rem;
-            font-weight: 700;
-            line-height: 140%;
-            margin: 0;
-          }
+        }
+        h2 {
+          color: $orange;
+          font-size: 1.25rem;
+          font-weight: 700;
+          line-height: 140%;
+          margin: 0;
         }
       }
       .hero__content-image {
@@ -101,7 +101,7 @@
   .intercambios__M2 {
     background-color: $darkPurple;
     padding: 5rem 0.75rem;
-    #carousel_04 {
+    #carousel_05 {
       margin: 0 auto;
       max-width: 992px;
       .carousel-indicators {

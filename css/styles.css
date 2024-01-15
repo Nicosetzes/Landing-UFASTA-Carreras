@@ -702,7 +702,7 @@ select {
   margin: 0 0.5rem 0 0;
   max-width: 25px;
 }
-.index .index__M3 .M3__content-header .M3__header-block div span {
+.index .index__M3 .M3__content-header .M3__header-block div h3 {
   color: #3c2a80;
   font-weight: 700;
 }
@@ -1141,7 +1141,7 @@ select {
     max-width: 275px;
   }
 }
-.index .index__M7 .M7__wrapper .M7__content-cards .M7__cards-card h3 {
+.index .index__M7 .M7__wrapper .M7__content-cards .M7__cards-card h5 {
   color: #616160;
   font-size: 1.125rem;
   font-weight: 700;
@@ -1539,6 +1539,22 @@ select {
   height: 700px;
   padding: 5rem 0.75rem;
 }
+.espacios .espacios__M2 #carousel_04 {
+  margin: 0 auto;
+  max-width: 992px;
+}
+.espacios .espacios__M2 #carousel_04 .carousel-indicators {
+  /* This is position absolute, as defined by bootstrap */
+  bottom: -3rem;
+}
+.espacios .espacios__M2 #carousel_04 iframe {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .espacios .espacios__M2 #carousel_04 iframe {
+    height: 500px;
+  }
+}
 
 .practicas {
   padding-top: 108px;
@@ -1781,7 +1797,7 @@ select {
   font-size: 1.5rem;
   margin: 2.75rem 0 1.5rem 0;
 }
-.intercambios .intercambios__hero .hero__wrapper .hero__content-info p:last-of-type {
+.intercambios .intercambios__hero .hero__wrapper .hero__content-info h2 {
   color: #ff9a3e;
   font-size: 1.25rem;
   font-weight: 700;
@@ -1858,19 +1874,19 @@ select {
   background-color: #3c2a80;
   padding: 5rem 0.75rem;
 }
-.intercambios .intercambios__M2 #carousel_04 {
+.intercambios .intercambios__M2 #carousel_05 {
   margin: 0 auto;
   max-width: 992px;
 }
-.intercambios .intercambios__M2 #carousel_04 .carousel-indicators {
+.intercambios .intercambios__M2 #carousel_05 .carousel-indicators {
   /* This is position absolute, as defined by bootstrap */
   bottom: -3rem;
 }
-.intercambios .intercambios__M2 #carousel_04 iframe {
+.intercambios .intercambios__M2 #carousel_05 iframe {
   width: 100%;
 }
 @media only screen and (min-width: 768px) {
-  .intercambios .intercambios__M2 #carousel_04 iframe {
+  .intercambios .intercambios__M2 #carousel_05 iframe {
     height: 500px;
   }
 }
@@ -1996,18 +2012,18 @@ select {
 .deportes .deportes__M1 .M1__wrapper .M1__content-carousel {
   padding: 5rem 0.75rem;
 }
-.deportes .deportes__M1 .M1__wrapper .M1__content-carousel #carousel_05 {
+.deportes .deportes__M1 .M1__wrapper .M1__content-carousel #carousel_06 {
   margin: 0 auto;
   max-width: 768px;
 }
-.deportes .deportes__M1 .M1__wrapper .M1__content-carousel #carousel_05 .carousel-indicators {
+.deportes .deportes__M1 .M1__wrapper .M1__content-carousel #carousel_06 .carousel-indicators {
   /* This is position absolute, as defined by bootstrap */
   bottom: -3rem;
 }
-.deportes .deportes__M1 .M1__wrapper .M1__content-carousel #carousel_05 .carousel-indicators button {
+.deportes .deportes__M1 .M1__wrapper .M1__content-carousel #carousel_06 .carousel-indicators button {
   background-color: #100e0e;
 }
-.deportes .deportes__M1 .M1__wrapper .M1__content-carousel #carousel_05 img {
+.deportes .deportes__M1 .M1__wrapper .M1__content-carousel #carousel_06 img {
   width: 100%;
 }
 .deportes .deportes__M2 {
@@ -2092,18 +2108,18 @@ select {
 .deportes .deportes__M2 .M2__wrapper .M2__content-carousel {
   padding: 0 0.75rem;
 }
-.deportes .deportes__M2 .M2__wrapper .M2__content-carousel #carousel_06 {
+.deportes .deportes__M2 .M2__wrapper .M2__content-carousel #carousel_07 {
   margin: 0 auto;
   max-width: 768px;
 }
-.deportes .deportes__M2 .M2__wrapper .M2__content-carousel #carousel_06 .carousel-indicators {
+.deportes .deportes__M2 .M2__wrapper .M2__content-carousel #carousel_07 .carousel-indicators {
   /* This is position absolute, as defined by bootstrap */
   bottom: -3rem;
 }
-.deportes .deportes__M2 .M2__wrapper .M2__content-carousel #carousel_06 .carousel-indicators button {
+.deportes .deportes__M2 .M2__wrapper .M2__content-carousel #carousel_07 .carousel-indicators button {
   background-color: #100e0e;
 }
-.deportes .deportes__M2 .M2__wrapper .M2__content-carousel #carousel_06 img {
+.deportes .deportes__M2 .M2__wrapper .M2__content-carousel #carousel_07 img {
   width: 100%;
 }
 
