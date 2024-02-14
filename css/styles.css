@@ -230,124 +230,43 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
-  border-radius: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 0 auto;
-  max-width: 500px;
-  padding: 2.5rem 0.75rem;
+  max-width: 800px;
+  width: 100%;
+}
+.website__form .form__wrapper .form__content-main .embed-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75%;
+  width: 100%;
+}
+.website__form .form__wrapper .form__content-main .embed-container #iFrameFormDesktop {
+  min-height: 700px;
+  width: 100%;
+}
+@media only screen and (min-width: 400px) {
+  .website__form .form__wrapper .form__content-main .embed-container #iFrameFormDesktop {
+    min-height: 600px;
+  }
+}
+@media only screen and (min-width: 525px) {
+  .website__form .form__wrapper .form__content-main .embed-container #iFrameFormDesktop {
+    min-height: 550px;
+  }
 }
 @media only screen and (min-width: 992px) {
-  .website__form .form__wrapper .form__content-main {
-    -ms-flex-preferred-size: 600px;
-        flex-basis: 600px;
-    margin: 0;
-    max-width: none;
-    padding: 2.5rem 1.25rem;
+  .website__form .form__wrapper .form__content-main .embed-container #iFrameFormDesktop {
+    min-height: 435px;
   }
 }
-.website__form .form__wrapper .form__content-main > p {
-  color: #0d3184;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0 0 3rem 0;
-  max-width: 375px;
-  text-align: center;
-}
-.website__form .form__wrapper .form__content-main .form__main-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-}
-@media only screen and (min-width: 1200px) {
-  .website__form .form__wrapper .form__content-main .form__main-row {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+@media only screen and (min-width: 1220px) {
+  .website__form .form__wrapper .form__content-main .embed-container #iFrameFormDesktop {
+    min-height: 415px;
   }
-}
-.website__form .form__wrapper .form__content-main .form__main-row input,
-.website__form .form__wrapper .form__content-main .form__main-row select,
-.website__form .form__wrapper .form__content-main .form__main-row textarea {
-  border: 1.5px solid #cac7c7;
-  margin: 0.5rem 0;
-}
-@media only screen and (min-width: 1200px) {
-  .website__form .form__wrapper .form__content-main .form__main-row input,
-  .website__form .form__wrapper .form__content-main .form__main-row select,
-  .website__form .form__wrapper .form__content-main .form__main-row textarea {
-    margin: 0.125rem;
-    width: 100%;
-  }
-}
-.website__form .form__wrapper .form__content-main .form__main-row input,
-.website__form .form__wrapper .form__content-main .form__main-row textarea {
-  padding: 0.5em 1.25em;
-}
-.website__form .form__wrapper .form__content-main .form__main-row select {
-  padding: 0.5em 1em;
-}
-.website__form .form__wrapper .form__content-main .form__main-row label {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #817e7e;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0.5rem 0.5rem 1.5rem 0.5rem;
-}
-.website__form .form__wrapper .form__content-main .form__main-row label input {
-  margin: 0 1rem 0 0;
-  width: 1rem;
-}
-.website__form .form__wrapper .form__content-main .form__main-row select,
-.website__form .form__wrapper .form__content-main .form__main-row p {
-  color: #817e7e;
-}
-.website__form .form__wrapper .form__content-main .form__main-row .form__row-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.website__form .form__wrapper .form__content-main .form__main-row .form__row-block input {
-  width: 100%;
-}
-@media only screen and (min-width: 1200px) {
-  .website__form .form__wrapper .form__content-main .form__main-row input[type=email] {
-    max-width: 275px;
-  }
-}
-.website__form .form__wrapper .form__content-main .form__main-row input[type=submit] {
-  background-color: #0d3184;
-  color: #f7f4ff;
-  font-weight: 700;
-  margin: 1.5rem 0 0 0;
-  width: 100%;
-}
-@media only screen and (min-width: 1200px) {
-  .website__form .form__wrapper .form__content-main .form__main-row input[type=submit] {
-    margin: 0 0 0 auto;
-    max-width: 275px;
-  }
-}
-.website__form .form__wrapper .form__content-main .form__main-row input[type=submit]:hover {
-  background-color: #1e284c;
 }
 
 .index {

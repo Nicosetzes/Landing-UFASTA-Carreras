@@ -330,60 +330,55 @@
               <p>Avellaneda 3341. Sede San Alberto Magno</p>
             </div>
           </div>
-          <form action="" class="form__content-main">
-            <p>Completá el formulario y recibí información sobre el ingreso</p>
-            <div class="form__main-row">
-              <input type="text" placeholder="Nombre*" /><input
-                type="text"
-                placeholder="Apellido*"
-              />
+          <div class="form__content-main">
+            <div class="embed-container">
+              <iframe
+                id="iFrameFormDesktop"
+                src=""
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
             </div>
-            <div class="form__main-row">
-              <select name="" id="">
-                <option value="">Tipo*</option>
-              </select>
-              <input type="text" placeholder="Número Documento*" />
-            </div>
-            <div class="form__main-row">
-              <input type="email" placeholder="Email*" />
-              <div class="form__row-block">
-                <select name="" id="">
-                  <option value="">País*</option>
-                </select>
-                <input type="text" placeholder="Móvil*" />
-              </div>
-            </div>
-            <div class="form__main-row">
-              <select name="" id="">
-                <option value="">Carrera*</option>
-              </select>
-            </div>
-            <div class="form__main-row">
-              <input
-                type="text"
-                placeholder="Seleccioná tu sede más cercana*"
-              />
-            </div>
-            <div class="form__main-row">
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Consulta"
-              ></textarea>
-            </div>
-            <div class="form__main-row">
-              <label
-                ><input type="checkbox" name="" id="" />
-                Deseo ser contactado por Whatsapp
-              </label>
-            </div>
-            <div class="form__main-row">
-              <p>*Requerido</p>
-              <input type="submit" value="Enviar" />
-            </div>
-          </form>
+            <script type="text/javascript">
+              let origen = "5";
+
+              //SETEA LA URL BASE PARA EL IFRAME
+              let urlIframe =
+                "https://apps.ufasta.edu.ar/inscripciones/formconsulta/?origen=" +
+                origen +
+                "&carrera=%%carrera%%";
+              //OBTIENE LA URL DE RETORNO EN BASE A LA CARRERA O LA FACULTAD SEGUN CORRESPONDA
+              let urlRetorno = setRetURL("%%carrera%%");
+
+              //AGREGA A LA URL DEL IFRAME EL PARAMETRO retURL CON EL VALOR OBTENIDO
+              urlIframe = urlIframe + "&retURL=" + urlRetorno;
+              console.log("urlIframe:  ", urlIframe);
+              //SETEA AL ATRIBUTO SRC DEL IFRAME CON LA URL CORRECTA.
+              document.getElementById("iFrameFormDesktop").src = urlIframe;
+
+              //FUNCION PARA OBTENER LA URL DE RETORNO SEGUN CARRERA
+              // SEGUN EL SHORTCODE SE PODRIA PONER UNA FUNCION QUE OBTENGA POR FACULTAD O POR CARRERA SEGUN CORRESPONDA
+              function setRetURL(codigoCarrera) {
+                let retUrl =
+                  "https://www.ufasta.edu.ar/ingreso/feedback-formulario-ingreso/";
+                return retUrl;
+              }
+
+              window.addEventListener(
+                "message",
+                (event) => {
+                  // Do we trust the sender of this message?
+                  if (event.origin !== "https://apps.ufasta.edu.ar") return;
+
+                  //REDIRECCIONAR
+                  if (event.data == "OK") {
+                    window.location.replace(urlRetorno);
+                  }
+                },
+                false
+              );
+            </script>
+          </div>
         </div>
       </section>
     </div>

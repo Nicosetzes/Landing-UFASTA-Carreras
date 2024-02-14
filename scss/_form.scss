@@ -46,93 +46,114 @@
     }
     .form__content-main {
       align-items: center;
-      background-color: #fff;
-      border-radius: 0.75rem;
+      // border-radius: 0.75rem;
       display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       margin: 0 auto;
-      max-width: 500px;
-      padding: 2.5rem 0.75rem;
-      @media only screen and (min-width: 992px) {
-        flex-basis: 600px;
-        margin: 0;
-        max-width: none;
-        padding: 2.5rem 1.25rem;
-      }
-      & > p {
-        color: $mediumBlue;
-        font-size: 1.25rem;
-        font-weight: 700;
-        margin: 0 0 3rem 0;
-        max-width: 375px;
-        text-align: center;
-      }
-      .form__main-row {
+      max-width: 800px;
+      // padding: 2.5rem 0.75rem;
+      width: 100%;
+      // @media only screen and (min-width: 992px) {
+      //   flex-basis: 600px;
+      //   margin: 0;
+      //   max-width: none;
+      //   padding: 2.5rem 1.25rem;
+      // }
+      .embed-container {
         display: flex;
-        flex-direction: column;
+        height: 75%;
         width: 100%;
-        @media only screen and (min-width: 1200px) {
-          align-items: center;
-          flex-direction: row;
-        }
-        input,
-        select,
-        textarea {
-          border: 1.5px solid #cac7c7;
-          margin: 0.5rem 0;
-          @media only screen and (min-width: 1200px) {
-            margin: 0.125rem;
-            width: 100%;
-          }
-        }
-        input,
-        textarea {
-          padding: 0.5em 1.25em;
-        }
-        select {
-          padding: 0.5em 1em;
-        }
-        label {
-          align-items: center;
-          color: #817e7e;
-          display: flex;
-          margin: 0.5rem 0.5rem 1.5rem 0.5rem;
-          input {
-            margin: 0 1rem 0 0;
-            width: 1rem;
-          }
-        }
-
-        select,
-        p {
-          color: #817e7e;
-        }
-        .form__row-block {
-          display: flex;
-          input {
-            width: 100%;
-          }
-        }
-        input[type="email"] {
-          @media only screen and (min-width: 1200px) {
-            max-width: 275px;
-          }
-        }
-        input[type="submit"] {
-          background-color: $mediumBlue;
-          color: $lightPurple;
-          font-weight: 700;
-          margin: 1.5rem 0 0 0;
+        #iFrameFormDesktop {
+          min-height: 700px;
           width: 100%;
-          @media only screen and (min-width: 1200px) {
-            margin: 0 0 0 auto;
-            max-width: 275px;
+          @media only screen and (min-width: 400px) {
+            min-height: 600px;
           }
-          &:hover {
-            background-color: $darkBlue;
+          @media only screen and (min-width: 525px) {
+            min-height: 550px;
+          }
+          @media only screen and (min-width: 992px) {
+            min-height: 435px;
+          }
+          @media only screen and (min-width: 1220px) {
+            min-height: 415px;
           }
         }
       }
+      // & > p {
+      //   color: $mediumBlue;
+      //   font-size: 1.25rem;
+      //   font-weight: 700;
+      //   margin: 0 0 3rem 0;
+      //   max-width: 375px;
+      //   text-align: center;
+      // }
+      // .form__main-row {
+      //   display: flex;
+      //   flex-direction: column;
+      //   width: 100%;
+      //   @media only screen and (min-width: 1200px) {
+      //     align-items: center;
+      //     flex-direction: row;
+      //   }
+      //   input,
+      //   select,
+      //   textarea {
+      //     border: 1.5px solid #cac7c7;
+      //     margin: 0.5rem 0;
+      //     @media only screen and (min-width: 1200px) {
+      //       margin: 0.125rem;
+      //       width: 100%;
+      //     }
+      //   }
+      //   input,
+      //   textarea {
+      //     padding: 0.5em 1.25em;
+      //   }
+      //   select {
+      //     padding: 0.5em 1em;
+      //   }
+      //   label {
+      //     align-items: center;
+      //     color: #817e7e;
+      //     display: flex;
+      //     margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+      //     input {
+      //       margin: 0 1rem 0 0;
+      //       width: 1rem;
+      //     }
+      //   }
+
+      //   select,
+      //   p {
+      //     color: #817e7e;
+      //   }
+      //   .form__row-block {
+      //     display: flex;
+      //     input {
+      //       width: 100%;
+      //     }
+      //   }
+      //   input[type="email"] {
+      //     @media only screen and (min-width: 1200px) {
+      //       max-width: 275px;
+      //     }
+      //   }
+      //   input[type="submit"] {
+      //     background-color: $mediumBlue;
+      //     color: $lightPurple;
+      //     font-weight: 700;
+      //     margin: 1.5rem 0 0 0;
+      //     width: 100%;
+      //     @media only screen and (min-width: 1200px) {
+      //       margin: 0 0 0 auto;
+      //       max-width: 275px;
+      //     }
+      //     &:hover {
+      //       background-color: $darkBlue;
+      //     }
+      //   }
+      // }
     }
   }
 }
