@@ -258,7 +258,6 @@
         }
         div {
           align-items: center;
-          box-shadow: 0px 4px 4px 0px rgba(181, 181, 181, 0.25);
           display: flex;
           margin: 1rem auto;
           padding: 0.5rem 1.5rem;
@@ -283,7 +282,7 @@
       }
     }
     .M3__content-cards {
-      margin: 3rem auto;
+      margin: 3rem auto 0 auto;
       max-width: 1000px;
       @media only screen and (min-width: 992px) {
         display: flex;
@@ -368,17 +367,17 @@
               font-weight: bold; /* If you want it to be bold */
               display: inline-block; /* Needed to add space between the bullet and the text */
               width: 1em; /* Also needed for space (tweak if needed) */
-              margin-left: -1em; /* Also needed for space (tweak if needed) */
+              margin-left: -1.25em; /* Also needed for space (tweak if needed) */
+            }
+            & > a {
+              color: inherit;
+              text-decoration: none;
+              &:hover {
+                color: $orange;
+              }
             }
           }
         }
-      }
-    }
-    .M3__content-button {
-      .button-primary {
-        margin: 0 auto;
-        max-width: 275px;
-        text-decoration: underline;
       }
     }
   }

@@ -596,8 +596,6 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(181, 181, 181, 0.25);
-          box-shadow: 0px 4px 4px 0px rgba(181, 181, 181, 0.25);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,7 +624,7 @@ select {
   font-weight: 700;
 }
 .index .index__M3 .M3__content-cards {
-  margin: 3rem auto;
+  margin: 3rem auto 0 auto;
   max-width: 1000px;
 }
 @media only screen and (min-width: 992px) {
@@ -716,12 +714,14 @@ select {
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
   width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1.25em; /* Also needed for space (tweak if needed) */
 }
-.index .index__M3 .M3__content-button .button-primary {
-  margin: 0 auto;
-  max-width: 275px;
-  text-decoration: underline;
+.index .index__M3 .M3__content-cards .card-body ul li > a {
+  color: inherit;
+  text-decoration: none;
+}
+.index .index__M3 .M3__content-cards .card-body ul li > a:hover {
+  color: #ff9a3e;
 }
 .index .index__M4 {
   background-color: #1e284c;

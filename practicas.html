@@ -1,6 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NMFDNW9");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prácticas | UFASTA</title>
@@ -23,10 +37,20 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
+     <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NMFDNW9"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="header">
       <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container-fluid">
-          <a href="index.html">
+         <a href="https://www.ufasta.edu.ar/" target="_blank">
             <img
               src="./media/banner_01.png"
               class="nav-banner"
@@ -215,7 +239,7 @@
             </div>
           </div>
           <div class="form__content-main">
-            <div class="embed-container">
+             <div class="embed-container">
               <iframe
                 id="iFrameFormDesktop"
                 src=""
@@ -230,7 +254,7 @@
               let urlIframe =
                 "https://apps.ufasta.edu.ar/inscripciones/formconsulta/?origen=" +
                 origen +
-                "&carrera=%%carrera%%";
+                "&sede=F";
               //OBTIENE LA URL DE RETORNO EN BASE A LA CARRERA O LA FACULTAD SEGUN CORRESPONDA
               let urlRetorno = setRetURL("%%carrera%%");
 
@@ -262,6 +286,7 @@
                 false
               );
             </script>
+          </div>
           </div>
         </div>
       </section>
